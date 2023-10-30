@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: flaskdemo
   name: flaskdemo
@@ -13,15 +12,12 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: flaskdemo
     spec:
       containers:
       - image: yemisiomonijo/test:latest
         name: flaskdemo
-        resources: {}
-status: {}
 ---
 apiVersion: v1
 kind: Service
